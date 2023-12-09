@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Playpen%20Sans:700|Poppins:400');
+
+:root {
+    --text: #06080f;
+    --background: #f0f2f9;
+    --primary: #4c6dc8;
+    --secondary: #92a7e3;
+    --accent: #5b7bdc;
+    --shadow: #2c4075;
+}
+
+* {
+    transition: all 0.3s ease !important;
+    color: var(--text);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--shadow);
+}
+::-webkit-scrollbar-track {
+    background-color: var(--primary);
+}
+
+*::selection {
+    background-color: var(--primary);
+    color: white !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-clr);
+}
+
+h1, h2, h3 {
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 600;
+}
+ 
+h4, h5 {
+    font-family: 'Popins', sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 300;
+}
+
+a {
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 300;
+}
+  
+html {font-size: 100%;} /* 16px */
+  
+h1 {font-size: 4.210rem; /* 67.36px */}
+  
+h2 {font-size: 3.158rem; /* 50.56px */}
+  
+h3 {font-size: 2.369rem; /* 37.92px */}
+  
+h4 {font-size: 1.777rem; /* 28.48px */}
+  
+h5 {font-size: 1.333rem; /* 21.28px */}
+  
+.card {
+    background-color: var(--background);
+    width: 600px;
+    margin: 40px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 5px var(--shadow);
+}
+
+/* Navbar */
+nav {
+    height: 60px;
+}
+
+.nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav {
+    background-color: var(--background);
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.nav a:hover {
+    color: var(--primary);
+}
+
+/* ABOUT ME */
+section {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+
+}
+
+#my-job .card .card-img img {
+    width: 100%;
+}
+
+#contact .card .card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .card .card-body .card-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .card .card-body .card-inner a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+button {
+    width: 250px;
+    height: 50px;
+    background-color: var(--primary);
+    border: solid 5px var(--shadow);
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--background);
+    box-shadow: 0px -.5px 5px 1px var(--shadow);
+}
+
+.footer {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .top {
+    margin-bottom: 20px;
+}
+
+.footer .bot {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+
+.footer a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+}
