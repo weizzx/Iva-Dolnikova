@@ -74,7 +74,7 @@ h5 {font-size: 1.333rem; /* 21.28px */}
   
 .card {
     background-color: var(--background);
-    width: 550px;
+    width: 800px;
     margin: 40px;
     padding: 25px;
     border-radius: 10px;
@@ -197,10 +197,4 @@ footer {
     display: flex;
     align-items: center;
     padding: 0px 5px;
-}
-
-@media screen and (max-width: 360px) {
-  card {
-      width: 300px;
-  }
 }
